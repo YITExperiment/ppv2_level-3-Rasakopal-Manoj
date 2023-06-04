@@ -9,7 +9,7 @@ def draw_circle(size,angle,shift):
     turtle.circle(size)
     turtle.right(angle)
     turtle.forward(shift)
-    draw_circle(size+5, angle+1, shift+1)
+    draw_circle(size+10, angle+10, shift+1)
     
 turtle.bgcolor('black')
 turtle.speed('fast')
@@ -20,7 +20,7 @@ draw_circle(30,0,1)
 def draw_circle(size):
     turtle.pencolor(next(colors))
     turtle.circle(size)
-    draw_circle(size+5)
+    draw_circle(size+10)
     
 turtle.bgcolor('black')
 turtle.speed('fast')
@@ -41,7 +41,7 @@ def draw_shape(size,angle,shift,shape):
     
     turtle.right(angle)
     turtle.forward(shift)
-    draw_shape(size+5, angle+1, shift+1, next_shape)
+    draw_shape(size+10, angle+10, shift+1, next_shape)
     
 turtle.bgcolor('black')
 turtle.speed('fast')
